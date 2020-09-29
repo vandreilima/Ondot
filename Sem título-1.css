@@ -1,0 +1,23 @@
+:root {
+
+/* Colors: */
+--unnamed-color-e8d4d4: #E8D4D4;
+--unnamed-color-6c63ff: #6C63FF;
+
+/* Font/text values */
+--unnamed-font-family-existence: Existence;
+--unnamed-font-style-light: Light;
+--unnamed-font-size-49: 49px;
+--unnamed-character-spacing-0: 0px;
+--unnamed-line-spacing-62: 62px;
+}
+
+/* Character Styles */
+.unnamed-character-style-1 {
+font-family: var(--unnamed-font-family-existence);
+font-style: var(--unnamed-font-style-light);
+font-size: var(--unnamed-font-size-49);
+line-height: var(--unnamed-line-spacing-62);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-e8d4d4);
+}

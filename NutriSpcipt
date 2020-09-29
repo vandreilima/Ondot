@@ -1,0 +1,29 @@
+o objetivo desse projeto é criar um site a onde possa se calcular macro nutrientes, de uma forma rapida e personalizada
+o foco é facilitar os calculos de importanstes para uma dieta e mostrar dicas de como consegui alcançar os seus objetivos 
+com o corpo
+
+Escopo:
+- Trazer resultados de quantidade de calorias que o usuario deve ingerir para conseguir alcançar o objetivo podendo ser (ganho,perca ou manter) massa magra
+- Fornecer possibilidades de realizar calculo de macro de cilco de carboidrato
+- deixar claro que o objetivo é ajudar e nada melor do que o auxilio profissional
+
+como:
+- Criando uma calculadora a onde sera possivel obter os dados necessarios para conseguir seguir uma dieta
+- Fornecendo dicas de como criar uma diete ou seguir uma reeducação alimentar
+
+Arquitetura de software:
+Devera ter um formulario bem amplo que seja flexivel para alteraçoes nos valores dos campos
+
+- Campos -
+
+Obrigatorios : (Objetivo,sexo,altura,peso,Nivel de intensidade de treino)
+
+Objetivo: qual é o opbjetivo do usuario, manter peso, perder peso ou ganar peso.
+
+Sexo: Masculino ou Femenino
+
+Altura: altura do usuario
+
+Peso: Peso do usuario
+
+Nivel de Itensidade do treino: saber se o usuario se exercita duranto o dia ou nao
