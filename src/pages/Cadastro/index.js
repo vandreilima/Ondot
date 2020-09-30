@@ -18,18 +18,14 @@ class Cadastro extends Component {
     abrirMenu: false,
     image: []
   }
-
-
   abrirMenu = () => {
     this.setState((prevState) => {
       return { abrirMenu: !prevState.abrirMenu }
     })
   }
-
   fecharMenu = () => {
     this.setState({ abrirMenu: false })
   }
-
   uploadFile = event => {
 
     var image = event.target.files[0]
@@ -38,8 +34,6 @@ class Cadastro extends Component {
       image
     })
   }
-
-
   handelClick() {
     var nome = document.getElementById('Nome').value
     var sobreNome = document.getElementById('SobreNome').value
@@ -52,7 +46,6 @@ class Cadastro extends Component {
     cadastroFuncionario(nome, sobreNome, genero, funcao, observacao, email, foto)
 
   }
-
   render() {
 
     let fundoEscuro;
@@ -66,7 +59,6 @@ class Cadastro extends Component {
         <Header abrir={this.abrirMenu} />
         <SideDrawer show={this.state.abrirMenu} />
         {fundoEscuro}
-
         <Forme>
           <Form>
             <Form.Group widths='equal'>
@@ -105,18 +97,14 @@ class Cadastro extends Component {
               placeholder='Observação'
             />
             <Form.Field>
-
               <label>Foto</label>
               <input id="Foto" type='file' onChange={this.uploadFile} style={{ display: "hidden" }} max={5} placeholder='Foto Perfil' />
-
-
             </Form.Field>
             <Form.Field
               id='Email'
               control={Input}
               label='Email'
               placeholder='joe@gmail.com'
-
             />
             <Form.Field
               id='form-button-control-public'
@@ -127,8 +115,6 @@ class Cadastro extends Component {
             />
           </Form>
         </Forme>
-
-
       </Container>
     );
   }
