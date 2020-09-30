@@ -12,7 +12,6 @@ const generoOpicoes = [
   { key: 'f', text: 'Femenino', value: 'Femenino' },
   { key: 'o', text: 'Outro', value: 'Outro' },
 ]
-
 class Cadastro extends Component {
   state = {
     abrirMenu: false,

@@ -10,18 +10,14 @@ class Home extends Component {
   state = {
     abrirMenu: false
   }
-
-
   abrirMenu = () => {
     this.setState((prevState) => {
       return { abrirMenu: !prevState.abrirMenu }
     })
   }
-
   fecharMenu = () => {
     this.setState({ abrirMenu: false })
   }
-
   render() {
 
     let fundoEscuro;
@@ -35,7 +31,6 @@ class Home extends Component {
         <Header abrir={this.abrirMenu} />
         <SideDrawer show={this.state.abrirMenu} />
         {fundoEscuro}
-
         <ContainerCentro>
           <Grid celled>
             <Grid.Row>
@@ -46,18 +41,7 @@ class Home extends Component {
                 <Image src='https://lh3.googleusercontent.com/GPC-DPV91Mp3j7-eFT8Tcs1DG9nZt3QZg7aXbYlhpuX4ec3U58UE8EcmUbCf1ZmnEc8=s180-rw' />
                 <Container>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                    ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et
-                    magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                    quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-                    arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-                    Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras
-                    dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-                    Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                    Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-                    viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-                    Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+                    Um texto foda...
                  </p>
                 </Container>
               </Grid.Column>
@@ -74,10 +58,7 @@ class Home extends Component {
               </Grid.Column>
             </Grid.Row>
           </Grid>
-
         </ContainerCentro>
-
-
       </Wrapper>
     );
   }

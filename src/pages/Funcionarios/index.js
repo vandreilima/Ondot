@@ -13,9 +13,6 @@ class ConfigFuncionarios extends Component {
     abrirMenu: false,
     img: []
   }
-
-
-
   componentDidMount() {
     var pasta = "Funcionarios"
 
@@ -32,24 +29,18 @@ class ConfigFuncionarios extends Component {
       }
     })
   }
-
   abrirMenu = () => {
     this.setState((prevState) => {
       return { abrirMenu: !prevState.abrirMenu }
     })
   }
-
   fecharMenu = () => {
     this.setState({ abrirMenu: false })
   }
-
-
   renderObj = () => {
     const { funcionarios } = this.state
     var pastaImagem = "Fotos Funcionarios"
     const Fotos = firebase.storage().ref(pastaImagem)
-
-
     return (
       Object.keys(funcionarios).map((obj, i) => {
         const Foto = Fotos.child(funcionarios[obj].Nome + ' ' + funcionarios[obj].SobreNome).getDownloadURL()
@@ -62,8 +53,6 @@ class ConfigFuncionarios extends Component {
         )
       }))
   }
-
-
   render() {
     const { funcionarios } = this.state
     let fundoEscuro;
@@ -76,12 +65,9 @@ class ConfigFuncionarios extends Component {
         <SideDrawer show={this.state.abrirMenu} />
         {fundoEscuro}
         <Grid>
-
           {this.renderObj()}
-
           <CrudNovoFuncionarios />
         </Grid>
-
       </Container>
     );
   }
